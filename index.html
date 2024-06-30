@@ -5,7 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lead-Assist</title>
+  <title>Lead_Assist</title>
+  <script>
+    window.addEventListener("message", function(event) {
+        // Ensure the message is coming from the expected origin
+        if (event.origin === "https://ddizon0426.github.io") {
+            if (event.data === "reloadParent") {
+                location.href = "https://ddizon0426.github.io/Chat_Prospecting/";
+            }
+        }
+    }, false);
+</script>
 </head>
 <body>
   <iframe id="fullscreen-iframe" src="https://script.google.com/macros/s/AKfycbzHJ_JrsTagzIL5I1da13vIhibWHSmuR7UBRGrzGBc_RHmjs1zChzDA5ZxNbxAlzXUv-w/exec" style="border: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0"></iframe>
